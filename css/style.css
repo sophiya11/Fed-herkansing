@@ -1,0 +1,148 @@
+body {
+    font-family: avenir;
+    margin: 0;
+}
+
+header ul {
+    margin: 0;
+    background-color: #0A183C;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+ul {
+    text-align: right;
+}
+
+/*grootte logo foto*/
+nav img {
+    width: 10em;
+
+}
+
+
+li:nth-of-type(2) {
+    margin-top: 2em;
+
+}
+
+li:last-of-type {
+    margin-top: 2em;
+}
+
+
+li a {
+
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    margin-right: 5em;
+
+}
+
+li a:hover {
+    color: yellow;
+}
+
+
+
+/*titel homepagina*/
+h1 {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    color: #333333;
+    margin-top: 2em;
+    border-bottom: 3px solid #4ab6c9;
+    width: 7em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0.5em;
+
+}
+
+/* uitlegtekstje boovenin */
+p {
+    max-width: 25em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4em;
+}
+
+/*Verhalen blokjes*/
+article {
+    width: 20em;
+    transition: .5s;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1em;
+}
+
+article img {
+    width: 15em;
+    height: 10em;
+    padding-bottom: 4em;
+    border-radius: 1em;
+    box-shadow:  0 3px 7px 0 rgba(0, 0, 0, 0.2), 0 3px 7px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+article img:hover {
+    filter: brightness(40%);
+}
+
+
+h3 {
+    color: #333333;
+
+}
+
+article p {
+    width: 15em;
+    margin-top: -7em;
+    margin-left: -4.3em;
+
+}
+
+/*gekleurde sterretjes*/
+.checked {
+    color: orange;
+
+}
+/*zwarte sterretjes*/
+.fa-star {
+    height: 5.5em;
+
+
+}
+
+article footer {
+    margin-top: -2.4em;
+    margin-left: 0.7em;
+
+}
+
+/* De articles naast elkaar plaatsen */
+div {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5em;
+}
+
+
+@media (min-width: 30em) {
+    div {
+        max-width: 60em;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}
+
+
+
+
