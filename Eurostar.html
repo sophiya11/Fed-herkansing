@@ -12,6 +12,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <script src="js/javascript.js"></script>
+
     <!--bron sterretjes: https://www.w3schools.com/howto/howto_css_star_rating.asp-->
 
     <!--bron sidebar animatie: https://www.w3schools.com/howto/howto_js_sidenav.asp-->
@@ -19,6 +21,7 @@
 </head>
 
 <body>
+    <script src="js/javascript.js"></script>
 
     <header>
         <nav>
@@ -26,7 +29,7 @@
                 <li><a href="Eurostar.html"><img src="images/eurostar%20logo.png" alt="Eurostar logo"></a></li>
 
                 <li><a href="Eurostar.html">
-                <img class="boekicoon" src="images/open-book.png" alt="boek"> Leeslijst</a></li>
+                        <img class="boekicoon" src="images/open-book.png" alt="boek"> Leeslijst</a></li>
 
                 <li><a href="Login.html"><img class="profielicoon" src="images/user.png" alt="boek">Account</a></li>
 
@@ -34,10 +37,10 @@
         </nav>
     </header>
 
-      <!--filtermenu-->
-       <section>
+    <!--filtermenu-->
+    <section>
 
-        <span onclick="openNav()">&#9776; filters</span>
+        <span class=filtericon>&#9776; filters</span>
 
         <form>
             <select name="sorteer">
@@ -51,9 +54,7 @@
     </section>
 
 
-    <div id="myFiltermenu" class="filtermenu">
-
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="filtermenu">
 
         <h3>Zoeken</h3>
         <form>
@@ -147,8 +148,8 @@
             <article>
 
                 <h3> Vrije versvorm </h3>
-                <a href="vrijeversvorm.html">
-                    <img src="images/vrijeversvorm%202.jpg" alt="thumbnail">
+                <a href="verhaal.html">
+                    <img src="images/vrijeversvorm.jpg" alt="thumbnail">
                 </a>
 
                 <footer>
@@ -259,7 +260,7 @@
 
             </article>
 
-             <article>
+            <article>
 
                 <h3> Regionaal dagblad </h3>
                 <a href="vrijeversvorm.html">
@@ -321,8 +322,24 @@
         </div>
     </main>
 
-    <footer>
-    <script src="js/javascript.js"></script>
+    <footer class="footer">
+
+        <h3>over</h3>
+        <p>
+
+        </p>
+
+        <h3>contact</h3>
+        <p></p>
+
+        <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+
+        <script src="js/javascript.js"></script>
+
     </footer>
 
 </body>

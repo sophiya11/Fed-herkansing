@@ -10,7 +10,7 @@ var ZoekButton = document.querySelector('img');
 var ZoekVeld = document.querySelector('header');
 
 function show () {
-    ZoekVeld.classList.toggle('');
+    ZoekVeld.classList.toggle('show-search');
 }
 
 ZoekButton.addEventListener('click', show);
@@ -18,11 +18,21 @@ ZoekButton.addEventListener('click', show);
 */
 
 
-/*filtermenu*/
-function openNav() {
-  document.getElementById("myFiltermenu").style.width = "250px";
+var filterKnop = document.querySelector('.filtericon');
+var = filterMenu = document.querySelector('.filtermenu');
+
+function show(){
+    filterMenu.classList.toggle('show-filters');
 }
 
-function closeNav() {
-  document.getElementById("myFiltermenu").style.width = "0";
-}
+filterKnop.addEventListener('click',show);
+
+
+/*
+filterKnop.addEventListener('click',function(){
+    filterMenu.classList.toggle('show-filters');
+});
+*/
+
+
+

@@ -125,7 +125,7 @@ article p {
 
 }
 
-/*gekleurde sterretjes*/
+/*gele sterretjes*/
 .checked {
     color: orange;
 
@@ -144,14 +144,6 @@ article footer {
 
 }
 
-/*favorieten knop*/
-button {
-    height: 1em;
-    padding: 2em;
-    top: -2em;
-    margin-top: -9em;
-    margin-left: 15em;
-}
 
 /* De articles naast elkaar plaatsen */
 div {
@@ -171,8 +163,6 @@ div {
     }
 }
 
-/*focus state moet erin*/
-
 
 
 /*filtermenu*/
@@ -191,10 +181,10 @@ select[name="sorteer"] {
 }
 
 
-span[onclick="openNav()"] {
+.filtericon {
     font-size: 1.4em;
-    cursor: pointer;
     color: grey;
+    cursor: pointer;
 }
 
 input[type=text] {
@@ -203,14 +193,6 @@ input[type=text] {
     margin-left: 3em;
     margin-top: -3em;
 
-}
-
-.closebtn {
-    position: absolute;
-    font-size: 2em;
-    margin-left: 6.7em;
-    text-decoration: none;
-    color: grey;
 }
 
 .filtermenu {
@@ -225,8 +207,14 @@ input[type=text] {
 
 }
 
+.show-filters{
+    left:-16em;
+}
+
+
+
 .filtermenu h3 {
-    margin-top: 2em;
+    margin-top: 1em;
     margin-left: 2em;
 }
 
@@ -271,4 +259,104 @@ label {
     vertical-align: middle;
     text-align: left;
 }
+
+
+/*footer
+
+bron: https://codepen.io/scanfcode/pen/MEZPNd
+
+*/
+
+.footer {
+    background-color: #0A183C;
+    padding: 2em;
+    font-size: 1em;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8em;
+}
+
+footer h3 {
+    color: #fff;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-top: 3em;
+    letter-spacing: 1px;
+
+}
+
+footer h3:first-of-type{
+    padding-left: 3em;
+}
+
+.social-icons {
+    padding-left: 0em;
+    margin-bottom: 0em;
+    margin-top: 0em;
+    list-style: none;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-top: 2em;
+
+}
+
+.social-icons li.title {
+    margin-right: 2em;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 1.2em;
+    display: inline-block;
+    line-height: 2.5em;
+    width: 2.5em;
+    height: 2.5em;
+    text-align: center;
+    margin-right: 0.5em;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+/*verhalenpagina*/
+.verhaal {
+    background-image: url('vormgeving%20verhaal%20ipad.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .verhaal {
+        background-image: url('');
+        margin-top: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 580px) and (max-width: 1024px) {
+    .verhaal {
+        background-image: url('vormgeving%20verhaal%20ipad.png');
+        margin-top: 200%;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .verhaal {
+        background-image: url('vormgeving%20verhaal%20iphone.png');
+        margin-top: 500%;
+    }
+}
+
 
