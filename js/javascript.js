@@ -19,7 +19,7 @@ ZoekButton.addEventListener('click', show);
 
 
 var filterKnop = document.querySelector('.filtericon');
-var = filterMenu = document.querySelector('.filtermenu');
+var filterMenu = document.querySelector('.filtermenu');
 
 function show(){
     filterMenu.classList.toggle('show-filters');

@@ -28,7 +28,11 @@ nav img {
     position: absolute;
     top: 1.5em;
     margin-left: 1em;
+    transition: 0.5s ease-in-out;
+}
 
+.boekicoon:hover {
+    transform: rotate(360deg);
 }
 
 .profielicoon {
@@ -36,8 +40,12 @@ nav img {
     position: absolute;
     top: 1.5em;
     margin-left: 1em;
+    transition: 0.5s ease-in-out;
 }
 
+.profielicoon:hover {
+    transform: rotate(360deg);
+}
 
 li:nth-of-type(2) {
     margin-top: 3em;
@@ -96,6 +104,7 @@ article {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 1em;
+
 }
 
 article a img {
@@ -104,18 +113,27 @@ article a img {
     padding-bottom: 4em;
     border-radius: 1em;
     box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2), 0 3px 7px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in;
 
 }
 
 article img:hover {
-    filter: brightness(30%);
-    transition: 0.3s ease-in;
+    filter: contrast(1);
+    transform: scale(1.05);
+    box-shadow: 10px 10px 5px grey;
+
 }
 
 
 h3 {
     color: #333333;
+    transition: 0.3s ease-in-out;
+}
 
+h3:hover {
+    color: white;
+    text-shadow: -1px 0 #0A183C, 0 1px #0A183C, 1px 0 #0A183C, 0 -1px #0A183C;
+    transform: skewX(-20deg);
 }
 
 article p {
@@ -171,27 +189,73 @@ section {
     background-color: #efefef;
     display: flex;
     justify-content: space-between;
-    padding: 1em;
-
 
 }
 
 select[name="sorteer"] {
-    margin-top: 0.65em;
+    margin-top: 2em;
+    width: 14em;
+    margin-right: 2em;
+
 }
 
+
+button {
+    border: none;
+    display: block;
+    background-color: #efefef;
+    font-size: 1em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-right: 9.7em;
+    padding-left: 1em;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    z-index: 1;
+
+}
+
+/*bron:https://codepen.io/sfoxy/pen/XpOoJe*/
+
+button::after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: -5em;
+    top: 0;
+    height: 36em;
+    width: 28em;
+    background: #4ab6c9;
+    transition: all .5s ease-in-out;
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+button:hover::after {
+    transform: translateX(17%) translateY(15%) rotate(45deg);
+
+}
 
 .filtericon {
-    font-size: 1.4em;
+    font-size: 1.3em;
     color: grey;
     cursor: pointer;
+    z-index: 1;
+
 }
+
 
 input[type=text] {
     padding: 1em;
     width: 15em;
     margin-left: 3em;
     margin-top: -3em;
+    transition: 0.3s ease-in;
+}
+
+input:focus {
+    outline: 1px #4ab6c9 solid;
+    transform: scale(1.1);
 
 }
 
@@ -201,17 +265,17 @@ input[type=text] {
     z-index: 1;
     background-color: #efefef;
     overflow-x: hidden;
-    transition: 0.5s;
     width: 15.5em;
     padding-left: 0em;
+    overflow-x: hidden;
+    transition: all 0.5s ease-in-out;
 
 }
 
-.show-filters{
-    left:-16em;
+.show-filters {
+    left: -16em;
+    transform: translateX(-100%)
 }
-
-
 
 .filtermenu h3 {
     margin-top: 1em;
@@ -233,6 +297,7 @@ input[type=text] {
 }
 
 input[type="checkbox"] {
+    display: ;
     vertical-align: bottom;
     padding: 0;
     margin: 0;
@@ -242,6 +307,7 @@ input[type="checkbox"] {
     overflow: hidden;
 
 }
+
 
 li label span {
     display: block;
@@ -258,6 +324,12 @@ label {
     text-indent: -1em;
     vertical-align: middle;
     text-align: left;
+    transition: 0.3s ease-in-out;
+}
+
+label:hover {
+    color: #4ab6c9;
+    transform: scale(1.2)
 }
 
 
@@ -286,7 +358,7 @@ footer h3 {
 
 }
 
-footer h3:first-of-type{
+footer h3:first-of-type {
     padding-left: 3em;
 }
 
@@ -358,5 +430,3 @@ footer h3:first-of-type{
         margin-top: 500%;
     }
 }
-
-

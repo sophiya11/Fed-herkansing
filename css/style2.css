@@ -18,10 +18,12 @@ header ul {
     background-color: #0a183C;
     width: 100%;
     padding-top: 0.3em;
+    list-style: none;
 }
 
 nav img {
     width: 10em;
+
 
 }
 
